@@ -1,6 +1,10 @@
 #include <windows.h>
 #include <stdio.h>
 
+/*
+ * demo of keyboard event processing module - installs hook that listens to keyboard event and closes app once F12 Keydown event happens
+ */
+
 LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
     if (nCode == HC_ACTION && wParam == WM_KEYDOWN) {
         KBDLLHOOKSTRUCT *key = (KBDLLHOOKSTRUCT *)lParam;

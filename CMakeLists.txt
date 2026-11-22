@@ -3,8 +3,7 @@ project(http_keylogger C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(http_keylogger
-        #main.c
+add_executable(winapi_test
         winapi_test.c
 )
 add_executable(http_server_test
@@ -16,3 +15,7 @@ add_executable(http_client_test
         http_client_test.c
 )
 target_link_libraries(http_client_test PRIVATE ws2_32)
+
+add_executable(data_processor_test
+        data_processor_test.c
+)

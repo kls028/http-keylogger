@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+ * demo of network processing module client app - opens client connection to a server, formulates HTTP POST request and sends it to server
+ */
+
 int main(void) {
     WSADATA wsa;
     WSAStartup(MAKEWORD(2, 2), &wsa); //run Winsock 2.2

@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+ * demo of network processing module server app - waits for client connection and a HTTP POST request - sends back HTTP 200 OK response
+ */
+
 int main(void) {
     WSADATA wsa;
     WSAStartup(MAKEWORD(2, 2), &wsa); //run Winsock 2.2
