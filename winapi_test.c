@@ -31,7 +31,7 @@ int main(void) {
 
     MSG msg;
     while (GetMessage(&msg, NULL, 0, 0) > 0) {
-
+        //listens until gets PostQuitMessage (its code is equal to 0 [false])
     }
 
     UnhookWindowsHookEx(hook);
